@@ -1,0 +1,268 @@
+body {
+    font-family: cursive;
+    background-color: #d8f8e1;
+    }
+     
+    .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+    border-width: 6px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+    border-color: #838383;
+    border-radius: 20px;
+    }
+     
+    .header h1 {
+    font-size: 2em;
+    text-align: center;
+    }
+     
+    .banner {
+    background-size: cover;
+    height: 200px;
+    color: #333;
+    border-radius: 20px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+    border-width: 6px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+    border-color: #333;
+    border-radius: 20px;
+    }
+     
+    .banner h2 {
+    font-size: 2em;
+    color: #333;
+    }
+     
+    .banner p {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+    margin: 10px;
+    }
+     
+    .articulos {
+    padding: 20px;
+    }
+     
+    .articulos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    }
+     
+    .articulo {
+    margin-bottom: 20px;
+    }
+     
+    .articulo a {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    }
+     
+    .articulo a:hover {
+    background-color: #a2a2a2;
+    }
+     
+    .articulo img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    }
+     
+    .articulo p {
+  
+      
+    font-size: 1em;
+    }
+     
+    .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 0px;
+    border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+    border-width: 6px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+    border-color: #838383;
+    border-radius: 20px;
+  
+    }
+    .p-footer {
+    font-size: 0.8em;
+    }
+   
+    b {
+      background-color: aquamarine;
+      border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+      border-width: 3px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+      border-color: #333;
+      border-radius: 6px;
+      margin: 10px;
+    }
+    
+   .salut{
+    background-color: #edff91;
+   }
+  
+   .rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #ffc73a;
+    --fill: #ffc73a;
+    background-color: #666;
+    text-align: center;
+    border-radius: 10px;
+    width: 260px;
+    height: 30.2px;
+  }
+  
+  .rating input {
+    appearance: unset;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+    from {
+      stroke-dashoffset: 24;
+    }
+  }
+  
+  .rating label:hover svg {
+    stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+    0% {
+      transform: scale(1);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30% {
+      transform: scale(0);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30.1% {
+      stroke: var(--fill);
+      stroke-dasharray: 0;
+      stroke-linejoin: miter;
+      stroke-width: 8px;
+    }
+  
+    60% {
+      transform: scale(1.2);
+      fill: var(--fill);
+    }
+  }
+  
+  .h2-articulos{
+    background-color: aquamarine;
+    border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+    border-width: 4px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+    border-color: #333;
+    border-radius: 15px;
+    margin: 0px;
+    width: 124px;
+  }
+  
+  .pica-pica{
+  margin: 40px;
+  }
+  
+  .imagen-texto {
+    display: flex;
+    align-items: center;
+   }
+   
+   .imagen-texto h3 {
+    margin-right: 20px;
+   }
+  
+   .pica-pica-imagen{
+    border-style: solid;
+    border-width:6px;
+    border-color: #373737;
+    margin: 20px;
+    border-radius: 20px;
+   }
+
+   .h2-professorat{
+    background-color: aquamarine;
+    border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+    border-width: 4px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+    border-color: #333;
+    border-radius: 15px;
+    margin: 0px;
+   }
+   
+   .h2-delegats{
+    background-color: aquamarine;
+    border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+    border-width: 4px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+    border-color: #333;
+    border-radius: 15px;
+    margin: 0px;
+   }
+   
+   .h2-activitats{
+    background-color: aquamarine;
+    border-style: solid;  /* Agrega esta línea para establecer el estilo del borde */
+    border-width: 4px;   /* Usa la propiedad 'border-width' para especificar el grosor */
+    border-color: #333;
+    border-radius: 15px;
+    margin: 0px;
+    text-align: center;
+    font-size: xx-large;
+   }
